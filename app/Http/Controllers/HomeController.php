@@ -21,6 +21,7 @@ class HomeController extends Controller
     ];
 
     private $triggered_user = null;
+
     private $data = null;
 
     /**
@@ -89,6 +90,7 @@ class HomeController extends Controller
 
         return response()->json(['status' => 0]);
     }
+
     public function sendWhatever(Request $request, Post $post)
     {
         $this->setAlertData($request);
@@ -97,6 +99,7 @@ class HomeController extends Controller
         
         return response()->json(['status' => 0]);
     }
+
     public function sendYourname(Request $request, Post $post)
     {
         $this->setAlertData($request);
